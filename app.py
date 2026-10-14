@@ -10,8 +10,8 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    model = joblib.load("/content/malaria_random_forest_model.pkl")
-    features = joblib.load("/content/malaria_feature_names.pkl")
+    model = joblib.load("malaria_random_forest_model.pkl")
+    features = joblib.load("malaria_feature_names (1).pkl")
     return model, features
 
 model, features = load_model()
